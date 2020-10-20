@@ -11,4 +11,11 @@ public class UserValidatorTest
     {
         System.out.println(" Welcome to the program");
     }
+    //Checking the validity of first name
+    @Test
+    public void given_firstName_WhenProper_GiveTrue() {
+        UserValidator userValidator = new UserValidator();
+        boolean result;
+        result = userValidator.validateFirstName("Kale");
+    }
 }
