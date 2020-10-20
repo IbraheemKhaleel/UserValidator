@@ -11,4 +11,27 @@ public class UserValidatorTest
     {
         System.out.println(" Welcome to the program");
     }
+    @Test
+    public void given_firstName_WhenProper_GiveTrue() {
+        UserValidator userValidator = new UserValidator();
+        boolean result;
+        result = userValidator.validateFirstName("Kale");
+    }
+    //Checking the validity of second name
+    @Test
+    public void given_LastName_Proper_Give_True()
+    {
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validLastName("Ibrah");
+        Assert.assertTrue(result);
+    }
+    //Checking the validity of email id
+    @Test
+    public void given_email_WhenValid_GiveTrue()
+    {
+        UserValidator userValidator = new UserValidator();
+        boolean result;
+        result = userValidator.validateEmailId("ikhale@gmail.co.in");
+        Assert.assertTrue(result);
+    }
 }
