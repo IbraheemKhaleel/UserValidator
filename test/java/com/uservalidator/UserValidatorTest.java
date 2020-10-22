@@ -20,7 +20,7 @@ public class UserValidatorTest
     }
     //Checking the validity of second name
     @Test
-    public void given_LastName_Proper_Give_True()
+    public void givenLastName_Proper_ReturnTrue()
     {
         UserValidator userValidator = new UserValidator();
         boolean result = userValidator.validLastName("Ibrah");
@@ -28,7 +28,7 @@ public class UserValidatorTest
     }
     //Checking the validity of email id
     @Test
-    public void given_email_WhenValid_GiveTrue()
+    public void givenEmail_WhenValid_ReturnTrue()
     {
         UserValidator userValidator = new UserValidator();
         boolean result;
@@ -37,7 +37,7 @@ public class UserValidatorTest
     }
     //Checking the validity of mobile number
     @Test
-    public void given_MobileNumber_WhenValid_GiveTrue()
+    public void givenMobileNumber_WhenValid_ReturnTrue()
     {
         UserValidator userValidator = new UserValidator();
         boolean result;
@@ -46,7 +46,7 @@ public class UserValidatorTest
     }
     //Check the validity of password
     @Test
-    public void given_Password_WhenValid_GiveTrue()
+    public void givenPassword_WhenValid_ReturnTrue()
     {
         UserValidator userValidator = new UserValidator();
         boolean result;
